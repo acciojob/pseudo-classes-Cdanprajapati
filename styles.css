@@ -1,1 +1,41 @@
 /*  your css code here. If applicable */
+:root {
+  background-color: rgb(135, 206, 235); /* skyblue */
+}
+
+/* Paragraph styling */
+article p:first-child {
+  background-color: black;
+  color: white;
+}
+
+article p:nth-child(2) {
+  /* default text styling */
+}
+
+article p:last-child {
+  color: red;
+}
+
+/* List styling */
+ul li {
+  width: 50%;
+  padding: 10px;
+  background-color: gray;
+}
+
+/* Odd items - white background */
+ul li:nth-child(odd) {
+  background-color: white;
+}
+
+/* First and last items - large font */
+ul li:first-child,
+ul li:last-child {
+  font-size: 22px;
+}
+
+/* Third-to-last item (i.e., item 3 out of 5) */
+ul li:nth-last-child(3) {
+  background-color: pink;
+}
